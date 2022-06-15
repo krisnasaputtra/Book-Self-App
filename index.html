@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Self Apps</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Book Self APP</h1>
+    </header>
+    <main>
+        <section class="form-input-book">
+            <div class="form-input">
+                <hr>
+                <br>
+                <h2>Input Book into Rack</h2>
+                <form action="" id="form">
+                    <div class="input">
+                        <label for="book-title">Judul</label>
+                        <input type="text" id="book-title" required>
+                    </div>
+                    <div class="input">
+                        <label for="book-author">Penulis</label>
+                        <input type="text" id="book-author" required>
+                    </div>
+                    <div class="input">
+                        <label for="book-release">Tahun Terbit</label>
+                        <input type="number" id="book-release" required>
+                    </div>
+                    <div class="input-status-book" style="margin-bottom: 10px;">
+                        <label for="status-book">Selesai Dibaca</label>
+                        <input type="checkbox" id="status-book">
+                    </div>
+                    <button type="submit" class="buttonSubmit">Masukkan buku ke rak <span>Belum selesai
+                            dibaca</span></button>
+                    <br>
+                    <hr>
+                </form>
+            </div>
+        </section>
+        <section class="searchAndListBook">
+            <h2>Book Rack</h2>
+            <form action="" class="search">
+                <input type="text" placeholder="Search Book" class="search-book-title">
+                <button type="submit" class="button-search">
+                    <svg width="1em" height="1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor" class="ui-svg-inline">
+                        <path
+                            d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z">
+                        </path>
+                    </svg>
+                </button>
+            </form>
+            <div class="list-book">
+                <h3>List buku belum selesai dibaca</h3>
+                <div class="book-item" id="book-uncomplete-read"></div>
+            </div>
+            <div class="list-book">
+                <h3>List buku sudah dibaca</h3>
+                <div class="book-item" id="book-complete-read"></div>
+            </div>
+        </section>
+    </main>
+    <script src="dist/sweetalert2.all.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

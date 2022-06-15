@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(236, 240, 245);
+}
+header {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #11c5c6;
+  text-align: center;
+  color: white;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.form-input-book {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+  margin-right: 20px;
+  border: 0;
+  font-weight: bold;
+  padding: 16px;
+  color: #11c5c6;
+}
+.searchAndListBook {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  border: 1px solid black;
+  font-weight: bold;
+  padding: 16px;
+  color: #11c5c6;
+  border-radius: 10px;
+}
+.form-input > h2 {
+  text-align: center;
+}
+.form-input > form > .input {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.form-input > form > .input > input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.form-input > form > button {
+  width: 100%;
+  display: block;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #11c5c6;
+  opacity: 0.5;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+.form-input > form > button:hover {
+  opacity: 1;
+}
+.form-input > form > button > span {
+  font-weight: bold;
+}
+.searchAndListBook > h2 {
+  text-align: center;
+}
+.searchAndListBook > .search {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+}
+.searchAndListBook > .search > input {
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  flex-basis: 90%;
+}
+.searchAndListBook > .search > input:focus {
+  outline: none !important;
+}
+.searchAndListBook > .search > .button-search {
+  display: block;
+  flex-basis: 10%;
+  padding: 10px;
+  border: 0;
+  background-color: #11c5c6;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+.searchAndListBook > .search > .button-search:hover {
+  opacity: 1;
+}
+.searchAndListBook > .list-book {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin: 20px 0;
+  text-align: center;
+  border: 0.5px solid black;
+  border-radius: 10px;
+}
+.searchAndListBook > .list-book > .book-item {
+  display: flex;
+  flex-direction: column;
+}
+.searchAndListBook > .list-book > .book-item > .container-book {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.searchAndListBook > .list-book > .book-item > .container-book > .data-book-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 90%;
+  text-align: left;
+  margin: 0 20px;
+  color: black;
+}
+.searchAndListBook > .list-book > .book-item > .container-book > .data-book-container > p {
+  font-size: 12px;
+}
+.searchAndListBook > .list-book > .book-item > .container-book > .button-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 10%;
+  margin: 0 20px;
+}
+.searchAndListBook > .list-book > .book-item > .container-book > .button-container > button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 10px 0;
+  border: 0;
+  background-color: #11c5c6;
+}
+.searchAndListBook > .list-book > .book-item > .container-book > .button-container > .button-complete {
+  background: url("../assets/check-circle.svg");
+  background-size: contain;
+}
+.searchAndListBook > .list-book > .book-item > .container-book > .button-container > .button-complete:hover {
+  background: url("../assets/check-circle-fill.svg");
+  background-size: contain;
+}
+.searchAndListBook > .list-book > .book-item > .container-book > .button-container > .button-delete {
+  background: url("../assets/trash3.svg");
+  background-size: contain;
+}
+.searchAndListBook > .list-book > .book-item > .container-book > .button-container > .button-delete:hover {
+  background: url("../assets/trash3-fill.svg");
+  background-size: contain;
+}
+.searchAndListBook > .list-book > .book-item > .container-book > .button-container > .button-refresh {
+  background: url("../assets/arrow-clockwise.svg");
+  background-size: contain;
+}
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  .form-input-book {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .searchAndListBook {
+    flex-basis: 100%;
+  }
+  .searchAndListBook > .list-book > .book-item > .container-book {
+    display: flex;
+    flex-direction: column;
+  }
+  .searchAndListBook > .list-book > .book-item > .container-book > .button-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .searchAndListBook > .list-book > .book-item > .container-book > .button-container > button {
+    margin-right: 10px;
+  }
+}
